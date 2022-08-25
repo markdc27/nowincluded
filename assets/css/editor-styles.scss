@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Editor Content Widths */
+.wp-block-block {
+  max-width: 90% !important;
+  
+  &[data-align="wide"] {
+    max-width: 100% !important;
+  }
+  &[data-align="full"] {
+    max-width: none !important;
+  }
+}
+
+.is-root-container {
+  @apply prose-xl;
+
+  section img {
+    margin-top: 0;
+    margin-top: 0;
+  }
+}
+
+@import 'global/fonts';
+@import 'blocks/blocks';

@@ -1,0 +1,169 @@
+{
+    "version": 1,
+    "settings": {
+        "layout": {
+             "contentSize": "840px",
+             "wideSize": "1100px"
+        },
+        "color": {
+            "custom": false,
+            "customGradient": false,
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Gray",
+                    "slug": "gray",
+                    "color": "#1D1D1D"
+                },
+                {
+                    "name": "Light Gray",
+                    "slug": "light-gray",
+                    "color": "#f4f4f4"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Blue",
+                    "slug": "blue",
+                    "color": "#287FDD"
+                },
+                {
+                    "name": "Light Blue",
+                    "slug": "light-blue",
+                    "color": "#e9f2fc"
+                },
+                {
+                    "name": "Magenta",
+                    "slug": "magenta",
+                    "color": "#CA1D48"
+                },
+                {
+                    "name": "Yellow",
+                    "slug": "yellow",
+                    "color": "#EEC31A"
+                }
+            ]
+        },
+        "typography": {
+            "customFontSize": false,
+            "dropCap": false,
+            "fontFamilies": [
+                {
+                    "fontFamily": "Agrandir, Verdana, sans-serif",
+                    "slug": "agrandir",
+                    "name": "Agrandir"
+                },
+                {
+                    "fontFamily": "Minion, serif",
+                    "slug": "minion",
+                    "name": "Minion"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "12",
+                    "size": "0.75rem",
+                    "name": "12"
+                },
+                {
+                    "slug": "14",
+                    "size": "0.875rem",
+                    "name": "14"
+                },
+                {
+                    "slug": "16",
+                    "size": "1rem",
+                    "name": "16"
+                },
+                {
+                    "slug": "18",
+                    "size": "1.125rem",
+                    "name": "18"
+                },
+                {
+                    "slug": "20",
+                    "size": "1.25rem",
+                    "name": "20"
+                },
+                {
+                    "slug": "24",
+                    "size": "1.5rem",
+                    "name": "24"
+                },
+                {
+                    "slug": "30",
+                    "size": "1.875rem",
+                    "name": "30"
+                },
+                {
+                    "slug": "35",
+                    "size": "2.188rem",
+                    "name": "35"
+                },
+                {
+                    "slug": "40",
+                    "size": "2.5rem",
+                    "name": "40"
+                },
+                {
+                    "slug": "42",
+                    "size": "2.625rem",
+                    "name": "42"
+                },
+                {
+                    "slug": "48",
+                    "size": "3rem",
+                    "name": "48"
+                },
+                {
+                    "slug": "70",
+                    "size": "4.375rem",
+                    "name": "70"
+                },
+                {
+                    "slug": "100",
+                    "size": "6.25rem",
+                    "name": "100"
+                },
+                {
+                    "slug": "120",
+                    "size": "7.5rem",
+                    "name": "120"
+                },
+                {
+                    "slug": "150",
+                    "size": "9.375rem",
+                    "name": "150"
+                },
+                {
+                    "slug": "160",
+                    "size": "10rem",
+                    "name": "160"
+                },
+                {
+                    "slug": "200",
+                    "size": "12.5rem",
+                    "name": "200"
+                }
+            ]
+        },
+        "spacing": {
+            "customPadding": true,
+            "customMargin": true,
+            "units": [ "px", "em", "rem", "vh", "vw" ]
+        },
+        "border": {
+            "customColor": false,
+            "customRadius": false,
+            "customStyle": false,
+            "customWidth": false
+        }
+    }
+}

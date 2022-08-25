@@ -1,0 +1,69 @@
+.wp-block-pullquote {
+    @apply py-2 #{!important};
+    @apply relative;
+    border: none !important;
+
+    &:before,
+    &:after {
+        @apply block;
+        @apply absolute;
+        @apply left-0;
+        height: 24px;
+        width: 44px;
+        content: '';
+        background-repeat: no-repeat;
+        @apply bg-white;
+    }
+
+    &:before {
+        @apply top-0;
+        background-image: url(/wp-content/themes/nowincluded/assets/images/quote-left.svg) !important;
+        background-position: top left;
+    }
+    &:after {
+        @apply bottom-0;
+        background-image: url(/wp-content/themes/nowincluded/assets/images/quote-right.svg) !important;
+        background-position: bottom left;
+    }
+
+    blockquote {
+        @apply py-10 #{!important};
+        @apply m-0;
+        @apply text-left;
+        border-top-width: 6px;
+        border-bottom-width: 6px;
+        border-color: rgba(40,127,221,0.2);
+
+        @media (max-width: 767px) {
+            @apply py-8 #{!important};
+        }
+
+        p {
+            @apply mt-0;
+            @apply mb-6;
+            @apply font-body;
+            @apply text-blue;
+            @apply text-48;
+            @apply text-left;
+            @apply leading-snug;
+
+            @media (max-width: 767px) {
+                @apply text-24 #{!important};
+                @apply leading-tight #{!important};
+            }
+        }
+        cite {
+            @apply text-left;
+            @apply font-body;
+            @apply italic;
+            @apply font-semibold;
+            @apply text-24;
+            @apply text-blue;
+            text-transform: none;
+
+            @media (max-width: 767px) {
+                @apply text-20 #{!important};
+            }
+        }
+    }
+}

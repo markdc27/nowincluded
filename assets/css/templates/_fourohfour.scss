@@ -1,0 +1,8 @@
+body.error404 {
+    @apply flex;
+    @apply flex-col;
+
+    main {
+        @apply flex-1;
+    }
+}

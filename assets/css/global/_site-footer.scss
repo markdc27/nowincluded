@@ -1,0 +1,29 @@
+.site-footer {
+    nav {
+        .footer-menu {
+            li {
+                a {
+                    @apply text-20;
+                    @apply underline;
+                    @apply font-bold;
+
+                    &:hover {
+                        @apply text-yellow;
+                    }
+                }
+            }
+
+            li + li {
+                @apply mt-2;
+            }
+        }
+    }
+    .explore nav .footer-menu li:not(:first-child) {
+
+        a {
+            @apply opacity-50;
+            @apply no-underline;
+            @apply text-16;
+        }
+    }
+}

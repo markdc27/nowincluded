@@ -1,0 +1,16 @@
+.wp-pagenavi {
+    a,
+    span {
+        border: none;
+        @apply font-display;
+        @apply font-bold;
+        @apply opacity-30;
+    
+        &.current,
+        &:hover {
+            @apply opacity-100;
+        }
+    }
+
+}
+

@@ -1,0 +1,28 @@
+section.native-columns {
+
+    .wp-block-columns {
+        @apply py-40 #{!important};
+        @apply text-center;
+        @apply font-body;
+        @apply text-24;
+        @apply grid;
+        @apply grid-cols-3;
+        @apply gap-8;
+        @apply my-0 #{!important};
+
+        @media (max-width: 767px) {
+            @apply py-10 #{!important};
+            @apply text-20;
+            @apply grid-cols-1;
+        }
+
+
+        > .wp-block-column {
+            @apply ml-0 #{!important};
+    
+            @media (max-width: 767px) {
+                @apply py-20;
+            }
+        }
+    }
+}

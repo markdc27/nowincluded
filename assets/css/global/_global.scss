@@ -1,0 +1,32 @@
+@import 'site-header';
+@import 'fonts';
+@import 'site-footer';
+@import 'swiper';
+@import 'pagination';
+
+.blur-container {
+    padding: 17%;
+
+    &:after {
+        content: '';
+        background-image:url(/wp-content/uploads/2021/09/Vector-1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+}
+#TypeformButtonWrap {
+    button {
+        @apply hover:bg-magenta #{!important};
+        @apply hover:text-white #{!important};
+    }
+}
+nav .TypeformButtonWrap a {
+    @apply hover:bg-magenta #{!important};
+}
+.tf-link a {
+    @apply hover:text-magenta #{!important};
+}

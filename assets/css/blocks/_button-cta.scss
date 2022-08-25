@@ -1,0 +1,20 @@
+section.button-cta {
+    #TypeformButtonWrap {
+
+        @media (min-width: 768px) {
+            @apply flex;
+            @apply justify-end;
+        }
+
+        p button {
+            @apply font-display #{!important};
+
+            @media (max-width: 767px) {
+                @apply text-20 #{!important};
+                @apply px-6 #{!important};
+                height: 41px !important;
+                line-height: 40px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*!
+Theme Name:         NowIncluded
+Description:  		NowIncluded theme
+Author:             Innovatemap
+Author URI:         https://innovatemap.com/
+Text Domain:        pm
+Version:            1.0.0
+*/
+@charset 'UTF-8';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "global/global";
+@import "templates/templates";
+@import "blocks/blocks";
+
+ul.playLinks {
+    text-align: center;
+}
+ul.playLinks li {
+    display: inline-block
+}
+.playLink {
+    width: 150px;
+    display: inline-block;
+}
+
+
+#header-trans {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    top: 0;
+
+    nav.menu-main-menu-container {
+        .menu-item { 
+            a {
+                @apply text-white;
+            }
+        }
+        .sub-menu {
+            .menu-item { 
+                a {
+                    @apply text-black;
+                }
+            }
+        }
+    }
+    .menu-open > svg path {
+        fill: #000 !important;
+    }
+}
+.mobile-menu-trans {
+    nav .mobile-menu {
+        padding-top: 94px;
+    }
+}

@@ -1,0 +1,24 @@
+section.story-section {
+    .logo {
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        transform: translateY(15px);
+
+        &.in-view {
+            opacity: 100;
+            transform: translateY(0);
+        }
+    }
+
+    .lines {
+        > div {
+            width: 0%;
+            transition: all 0.3s linear;
+            transition-delay: 0.3s;
+        }
+
+        .in-view {
+            width: 100%;
+        }
+    }
+}

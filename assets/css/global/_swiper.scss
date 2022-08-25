@@ -1,0 +1,36 @@
+#StatSlider {
+    .swiper-slide {
+        @apply opacity-0;
+
+        &.swiper-slide-active {
+            @apply opacity-100;
+        }
+    }
+}
+.post-slider {
+    @apply overflow-hidden;
+
+    .swiper-button-prev {
+        left: -80px;
+    }
+
+    .swiper-button-next {
+        right: -80px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+
+        &:after {
+            @apply text-black;
+            @apply opacity-30;
+        }
+    }
+    .swiper-pagination {
+        @media (max-width: 767px) {
+            bottom: -30px !important;
+        }
+    }
+}

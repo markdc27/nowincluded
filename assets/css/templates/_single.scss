@@ -1,0 +1,14 @@
+body.single {
+    article {
+        .content {
+            @apply max-w-screen-md;
+            @apply mx-auto;
+        }
+        .post-content {
+            > *:not(.alignwide) {
+                @apply max-w-screen-md;
+                @apply mx-auto;
+            }
+        }
+    }
+}
