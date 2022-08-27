@@ -1,7 +1,9 @@
 import Alpine from 'alpinejs'
 import intersect from '@alpinejs/intersect'
 import Swiper from 'swiper/bundle';
+import Splide from '@splidejs/splide';
 import 'swiper/css/bundle';
+
 
 Alpine.plugin(intersect)
 window.Alpine = Alpine
@@ -131,3 +133,19 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+var splide;
+
+splide = new Splide( '.splide', {
+	type: "fade",
+	autoplay: true,
+	interval: 5000,
+	pauseOnHover: false,
+	arrows: false,
+	perPage: 1,
+	type: 'loop',
+	pagination: true,
+	keyboard: false,
+	slideFocus: false,
+	height: '100%'
+}).mount();

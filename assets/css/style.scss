@@ -16,6 +16,8 @@ Version:            1.0.0
 @import "templates/templates";
 @import "blocks/blocks";
 
+@import "@splidejs/splide/css";
+
 ul.playLinks {
     text-align: center;
 }
@@ -26,7 +28,6 @@ ul.playLinks li {
     width: 150px;
     display: inline-block;
 }
-
 
 #header-trans {
     position: absolute;
@@ -56,5 +57,92 @@ ul.playLinks li {
 .mobile-menu-trans {
     nav .mobile-menu {
         padding-top: 94px;
+    }
+}
+
+.hero-slider {
+    article {
+        height: 100vh;
+
+        .img-gradient {
+            &:after {
+                content:'';
+                position:absolute;
+                left:0; top:0;
+                width:100%;
+                height:100%;
+                display:inline-block;
+                background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* FF3.6+ */
+                background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* IE10+ */
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, #000000 100%); /* W3C */
+            }
+        }
+        .state-and-date {
+            span {
+                color: #fff !important;
+                font-size: 25px !important;
+                line-height: 32px;
+            }
+        }
+        .category-text {
+            font-size: 25px !important;
+            line-height: 32px;
+
+           &::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: #287fDD;
+            margin-right: 10px;
+           } 
+        }
+        .read-more-link {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.5px;
+            color: #287fDD;
+        }   
+    }
+}
+
+.splide__slide {
+    height: 80vh;
+}
+.splide__progress {
+    background: transparent !important;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    .splide__progress__bar {
+        height: 5px;
+        background: #287fDD;
+    }
+}
+
+.splide__pagination {
+    max-width: 1280px;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: flex-start;
+    
+    .splide__pagination__page {
+        background: transparent;
+        border: solid 1px #fff !important;
+        width: 12px;
+        height: 12px;
+        &.is-active {
+            transform: none !important;
+            background: #fff;
+        }
+    }
+    li {
+        margin: 6px !important;
     }
 }

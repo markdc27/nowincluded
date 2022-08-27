@@ -171,14 +171,14 @@ function im_get_story_byline( $postID, $extended = true ) {
       <?php return;
     } ?>
 
-    <span class="text-black font-display text-14 md:text-16 font-bold">
-      <?php echo get_the_date('F Y'); ?>  
+    <span class="text-black font-display text-14 md:text-16">
       <?php if ( $location ) : ?>
-          |  <span class="hidden md:inline-block"><?php echo $locationArray[0]; ?></span>
+            <span class="hidden md:inline-block"><?php echo $locationArray[0]; ?></span>
           <?php if ( $stateAbbr ) : ?>
             ,<?php echo ' ' . $stateAbbr; ?>
           <?php endif; ?>
       <?php endif; ?>
+      &nbsp;&nbsp;<?php echo get_the_date('j F Y'); ?>
     </span>
     <?php return; ?>
 
@@ -191,11 +191,11 @@ function im_get_story_byline( $postID, $extended = true ) {
       <?php return;
     } ?>
 
-    <span class="text-black font-display text-14 md:text-16 font-bold">
-      <?php echo get_the_date('F Y'); ?>  
+    <span class="text-black font-display text-14 md:text-16">
       <?php if ( $location ) : ?>
-          |  <span class="hidden md:inline-block"><?php echo $location; ?></span>
+            <span class="hidden md:inline-block"><?php echo $location; ?></span>
       <?php endif; ?>
+      <?php echo get_the_date('j F Y'); ?>
     </span>
     <?php return; ?>
   <?php endif; ?>

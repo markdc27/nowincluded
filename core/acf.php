@@ -274,6 +274,51 @@ function im_acf_init() {
             ]
 		));
 
+        acf_register_block(array(
+			'name'				=> 'home-hero-slider',
+			'title'				=> __('Home Hero Slider'),
+			'render_callback'	=> 'im_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'star-empty',
+            'mode'              => 'preview',
+            'supports'          => [
+                'align'			    => false,
+                'anchor'		    => true,
+                'customClassName'	=> true,
+                'jsx' 			    => true,
+            ]
+		));
+
+        acf_register_block(array(
+			'name'				=> 'home-truth-section',
+			'title'				=> __('Home Truth Section'),
+			'render_callback'	=> 'im_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'star-empty',
+            'mode'              => 'preview',
+            'supports'          => [
+                'align'			    => false,
+                'anchor'		    => true,
+                'customClassName'	=> true,
+                'jsx' 			    => true,
+            ]
+		));
+
+        acf_register_block(array(
+			'name'				=> 'home-feature-top-section',
+			'title'				=> __('Home Feature Top Section'),
+			'render_callback'	=> 'im_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'star-empty',
+            'mode'              => 'preview',
+            'supports'          => [
+                'align'			    => false,
+                'anchor'		    => true,
+                'customClassName'	=> true,
+                'jsx' 			    => true,
+            ]
+		));
+
 		acf_register_block(array(
 			'name'				=> 'stat-slider',
 			'title'				=> __('Stat Slider'),
